@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+	<listeners>
+		<listener class-name="bil.helper.Listeners" />
+	</listeners>
+	<test name="Test">
+		<classes>
+		<class name="bil.tests.LoginTest">
+			<methods>
+					<exclude name="verifySystemAdminLogin" />
+				</methods>
+			</class>
+
+			  <!--<class name="bil.tests.UserRegistrationTest"> 
+			<methods> 
+			<include name="registerMultipleTeacherUser" />
+		    <exclude name="registerMultipleStudentUser" /> 
+		    <exclude name="registerMultipleDAUser" />
+		     </methods>
+		      </class> 
+		     <class name="bil.tests.ClassManagementTest" /> -->
+		</classes>
+	</test>
+</suite> 
